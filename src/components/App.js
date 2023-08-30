@@ -9,8 +9,8 @@ const App = () => {
   let x= useSelector((data)=>data)
   return (
     <div className="1">
-       <div className="2"><button className="increment" onClick={()=>dispatch(increment())}>increment</button></div> 
-        <div className="3"><button className="decrement" onClick={()=>dispatch(decrement())}>decrement</button></div>
+       <div className="2"><button className="increment" onClick={()=>dispatch(decrement())}>decrement</button></div> 
+        <div className="3"><button className="decrement" onClick={()=>dispatch(increment())}>increment</button></div>
         <h1 className="4">{x}</h1>
     </div>
   )
